@@ -1,4 +1,4 @@
-Feature: Cadastrar para cuidar de cães
+Feature: Cadastro para cuidar de cães
 
   Scenario: Realizar cadastro para cuidar de cães com sucesso
      Given que estou na página de cadastro
