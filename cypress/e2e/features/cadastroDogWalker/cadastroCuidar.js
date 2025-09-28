@@ -9,7 +9,7 @@ Given("quero ser dog walker", () => {
 });
 
 When("preencho os campos obrigatórios e seleciono a ativadade extra cuidar", () => {
-//    cy.get('[name="name"]').type("Andrew Dutra Jorge");
+    cy.get('[name="name"]').type("Andrew Dutra Jorge");
     cy.get('[name="email"]').type("andrew@teste.com.br");
     cy.get('[name="cpf"]').type("12345678910");
     cy.get('[name="cep"]').type("88802400");
