@@ -8,7 +8,7 @@ Given("quero ser dog walker", () => {
   cy.contains("Quero ser Dog Walker").click();
 });
 
-When("preencho os campos obrigatórios", () => {
+When("preencho os campos obrigatórios e seleciono a ativadade extra adestrar", () => {
     cy.get('[name="name"]').type("Andrew Dutra Jorge");
     cy.get('[name="email"]').type("andrew@teste.com.br");
     cy.get('[name="cpf"]').type("12345678910");
@@ -18,7 +18,7 @@ When("preencho os campos obrigatórios", () => {
     cy.wait('@buscarCEP', { timeout: 90000 }).its("response.statusCode").should('eq', 200)
     cy.get('[name="addressNumber"]').type("30");
     cy.get('[name="addressDetails"]').type("casa branca");
-    cy.contains("Cuidar").click();
+    cy.contains("Adestrar").click();
     cy.get('input[type="file"]').attachFile('uploads/documento-RG.jpeg', { force: true });
 });
 
